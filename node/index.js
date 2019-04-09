@@ -2,21 +2,14 @@ var firebase = require("firebase")
 
 var app = require('express')()
 
-var config = {
-    apiKey: "AIzaSyAvP7WXyKIaGHtFw0cFyq0-tv6W7ZG3Sz0",
-    authDomain: "tutorchinese-5296f.firebaseapp.com",
-    databaseURL: "https://tutorchinese-5296f.firebaseio.com",
-    projectId: "tutorchinese-5296f",
-    storageBucket: "tutorchinese-5296f.appspot.com",
-    messagingSenderId: "916266737057"
-}
+var config = require("./config.json");
 
 firebase.initializeApp(config);
 
 
 var admin = require("firebase-admin");
 // console.log(admin)
-var serviceAccount = require("../tutorchinese-5296f-firebase-adminsdk-herpz-3edd8d83c7.json");
+var serviceAccount = require("./tutorchinese-5296f-firebase-adminsdk-herpz-3edd8d83c7.json");
 // console.log(serviceAccount)
 
 admin.initializeApp({
