@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Firebase</title>
+    
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAvP7WXyKIaGHtFw0cFyq0-tv6W7ZG3Sz0",
+        authDomain: "tutorchinese-5296f.firebaseapp.com",
+        databaseURL: "https://tutorchinese-5296f.firebaseio.com",
+        projectId: "tutorchinese-5296f",
+        storageBucket: "tutorchinese-5296f.appspot.com",
+        messagingSenderId: "916266737057"
+    };
+    firebase.initializeApp(config);
+
+    firebase.database().ref().set({
+        name:"Jason",
+        age: 20
+    })
+
+    // db.collection("stories").where("author", "==", user.uid).get()
+
+    // console.log(db)
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
